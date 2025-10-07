@@ -23,8 +23,11 @@ int main(){
     float area2;
     float pib2;
     int pontos_turisticos2;
+    
   // Área para entrada de dados
-  // --- ENTRADA DE DADOS - CARTA 1 ---
+
+  // - ENTRADA DE DADOS - CARTA 1 -
+
     printf("--- CADASTRO CARTA 1 ---\n");
     
     printf("1. Estado (A a H): ");
@@ -50,6 +53,7 @@ int main(){
 
 
     // --- ENTRADA DE DADOS - CARTA 2 ---
+
     printf("\n--- CADASTRO CARTA 2 ---\n");
     
     printf("1. Estado (A a H): ");
@@ -75,5 +79,31 @@ int main(){
 
   // Área para exibição dos dados da cidade
 
-return 0;
+printf("\n=\n");
+    printf("       DADOS DAS CARTAS CADASTRADAS\n");
+    printf("=\n");
 
+    // --- EXIBIÇÃO - CARTA 1 ---
+    printf("\n*** CARTA 1 ***\n");
+    printf("Estado: %c\n", estado1);
+    printf("Codigo: %s\n", codigo_carta1);
+    printf("Nome da Cidade: %s\n", nome_cidade1);
+    printf("Populacao: %d\n", populacao1);
+    printf("Area: %.2f km²\n", area1); // %.2f exibe 2 casas decimais
+    printf("PIB: %.2f bilhoes de reais\n", pib1);
+    printf("Pontos Turisticos: %d\n", pontos_turisticos1);
+    
+    // --- EXIBIÇÃO - CARTA 2 ---
+    printf("\n*** CARTA 2 ***\n");
+    printf("Estado: %c\n", estado2);
+    printf("Codigo: %s\n", codigo_carta2);
+    printf("Nome da Cidade: %s\n", nome_cidade2);
+    printf("Populacao: %d\n", populacao2);
+    printf("Area: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhoes de reais\n", pib2);
+    printf("Pontos Turisticos: %d\n", pontos_turisticos2);
+
+    printf("=\n");
+
+return 0;
+}
